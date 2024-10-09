@@ -1,0 +1,32 @@
+---
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 120  # Set to a narrower column limit to break lines more evenly
+BinPackArguments: true  # Pack multiple elements on one line when possible
+BinPackParameters: true  # Pack multiple function parameters or array elements together
+AllowShortFunctionsOnASingleLine: false
+AllowAllConstructorInitializersOnNextLine: true
+
+# Align array elements neatly, keeping them grouped
+AlignConsecutiveDeclarations: true
+AlignConsecutiveAssignments: true
+AlignTrailingComments: true
+
+# Keep string literals from breaking across multiple lines
+BreakStringLiterals: false
+
+# Force braces on the next line
+BreakBeforeBraces: Allman
+
+BraceWrapping:
+  AfterControlStatement: true    # Put braces on a new line after if, while, etc.
+  AfterFunction: true            # Put braces on a new line after functions
+  AfterEnum: true                # Put braces on a new line after enums
+  AfterStruct: true              # Put braces on a new line after structs
+  SplitEmptyFunction: true       # Split empty function braces onto separate lines
+  SplitEmptyRecord: true         # Split empty struct or class braces onto separate lines
+  SplitEmptyNamespace: true
+
+
+# Prevent breaking initializers and keep them compact
+BreakConstructorInitializers: BeforeComma
